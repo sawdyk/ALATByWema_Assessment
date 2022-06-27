@@ -1,0 +1,616 @@
+00:04:44 [INF] Now listening on: "http://localhost:5264"
+00:04:44 [INF] Application started. Press Ctrl+C to shut down.
+00:04:44 [INF] Hosting environment: "Development"
+00:04:44 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:04:45 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:04:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:04:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:04:46 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 815.0997ms
+00:04:46 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 31.9751ms
+00:04:46 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 158.8294ms
+00:04:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:04:46 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 334.8340ms
+00:04:52 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 121
+00:04:52 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:04:52 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:04:53 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:04:53 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 454.9813ms
+00:04:53 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:04:53 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 121 - 400 - application/problem+json;+charset=utf-8 601.8637ms
+00:05:08 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 131
+00:05:08 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:05:08 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:05:08 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:05:08 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 18.1955ms
+00:05:08 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:05:08 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 131 - 400 - application/problem+json;+charset=utf-8 21.9252ms
+00:05:16 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 136
+00:05:16 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:05:16 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:05:24 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:05:26 [INF] Executed DbCommand ("116"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__req_PhoneNumber_0"
+00:05:33 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:05:33 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 16876.6987ms
+00:05:33 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:05:33 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 136 - 200 - application/json;+charset=utf-8 16920.6432ms
+00:05:50 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 137
+00:05:50 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:05:50 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:05:50 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:05:50 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 1.0188ms
+00:05:50 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:05:50 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 137 - 400 - application/problem+json;+charset=utf-8 1.6735ms
+00:05:59 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 136
+00:05:59 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:05:59 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:06:03 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:06:03 [INF] Executed DbCommand ("5"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__req_PhoneNumber_0"
+00:06:05 [INF] Executed DbCommand ("32"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+00:07:41 [INF] Now listening on: "http://localhost:5264"
+00:07:41 [INF] Application started. Press Ctrl+C to shut down.
+00:07:41 [INF] Hosting environment: "Development"
+00:07:41 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:07:44 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:07:44 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:07:44 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.7686ms
+00:07:44 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:07:44 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 644.3558ms
+00:07:44 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 125.3776ms
+00:07:45 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:07:45 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 281.2669ms
+00:07:56 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 125
+00:07:56 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:07:56 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:07:57 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:07:57 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 493.5815ms
+00:07:57 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:07:57 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 125 - 400 - application/problem+json;+charset=utf-8 684.7636ms
+00:08:09 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135
+00:08:09 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:08:09 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:08:14 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:08:16 [INF] Executed DbCommand ("82"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__req_PhoneNumber_0"
+00:08:19 [INF] Executed DbCommand ("110"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+00:08:22 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:08:22 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 13709.257ms
+00:08:22 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:08:22 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135 - 200 - application/json;+charset=utf-8 13722.3278ms
+00:08:35 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135
+00:08:35 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:08:35 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:08:39 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:08:39 [INF] Executed DbCommand ("2"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__req_PhoneNumber_0"
+00:08:39 [INF] Executed DbCommand ("4"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+00:08:39 [INF] Executed DbCommand ("4"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[StateName]
+FROM [State] AS [s]
+WHERE [s].[Id] = @__stateId_0"
+00:08:39 [INF] Executed DbCommand ("149"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+00:08:40 [INF] Executed DbCommand ("118"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Customers] ([DateCreated], [DateVerified], [EmailAddress], [LgaId], [PasswordHash], [PhoneNumber], [Salt], [StateId], [isVerified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Customers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+00:08:51 [INF] Executed DbCommand ("4"ms) [Parameters=["@__Trim_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__Trim_0"
+00:08:55 [INF] Executed DbCommand ("207"ms) [Parameters=["@__customer_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE [o].[CustomerPhoneNo] = @__customer_PhoneNumber_0"
+00:09:03 [INF] Executed DbCommand ("43"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [OtpGenerated] ([CustomerPhoneNo], [DateGenerated], [OTP])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [OtpGenerated]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+00:09:15 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:09:15 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 40718.9707ms
+00:09:15 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:09:15 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135 - 200 - application/json;+charset=utf-8 40721.9218ms
+00:12:26 [INF] Now listening on: "http://localhost:5264"
+00:12:26 [INF] Application started. Press Ctrl+C to shut down.
+00:12:26 [INF] Hosting environment: "Development"
+00:12:26 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:12:27 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:12:28 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:12:28 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:12:28 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 12.1560ms
+00:12:28 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 662.5557ms
+00:12:28 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.0432ms
+00:12:28 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:12:28 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 273.5668ms
+00:13:38 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 136
+00:13:38 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:13:38 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:13:39 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:13:39 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 522.2862ms
+00:13:39 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:13:39 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 136 - 400 - application/problem+json;+charset=utf-8 656.1003ms
+00:13:48 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 137
+00:13:48 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:13:48 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:13:48 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:13:48 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 20.6906ms
+00:13:48 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:13:48 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 137 - 400 - application/problem+json;+charset=utf-8 24.5721ms
+00:13:52 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135
+00:13:52 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:13:52 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:13:56 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:13:57 [INF] Executed DbCommand ("103"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__req_PhoneNumber_0"
+00:13:57 [INF] Executed DbCommand ("5"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+00:13:57 [INF] Executed DbCommand ("24"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[StateName]
+FROM [State] AS [s]
+WHERE [s].[Id] = @__stateId_0"
+00:13:57 [INF] Executed DbCommand ("2"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+00:13:57 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:13:57 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 5388.0863ms
+00:13:57 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:13:57 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135 - 200 - application/json;+charset=utf-8 5399.1015ms
+00:14:11 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 136
+00:14:11 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:14:11 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:14:16 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:14:16 [INF] Executed DbCommand ("3"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__req_PhoneNumber_0"
+00:14:16 [INF] Executed DbCommand ("1"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+00:14:16 [INF] Executed DbCommand ("1"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[StateName]
+FROM [State] AS [s]
+WHERE [s].[Id] = @__stateId_0"
+00:14:16 [INF] Executed DbCommand ("1"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+00:14:17 [INF] Executed DbCommand ("61"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Customers] ([DateCreated], [DateVerified], [EmailAddress], [LgaId], [PasswordHash], [PhoneNumber], [Salt], [StateId], [isVerified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Customers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+00:14:18 [INF] Executed DbCommand ("1"ms) [Parameters=["@__Trim_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__Trim_0"
+00:14:19 [INF] Executed DbCommand ("1"ms) [Parameters=["@__customer_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE [o].[CustomerPhoneNo] = @__customer_PhoneNumber_0"
+00:14:19 [INF] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [OtpGenerated] ([CustomerPhoneNo], [DateGenerated], [OTP])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [OtpGenerated]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+00:14:19 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:14:19 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 8109.7424ms
+00:14:19 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:14:19 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 136 - 200 - application/json;+charset=utf-8 8114.5568ms
+00:15:07 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 49
+00:15:07 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:15:07 [INF] Route matched with "{action = \"VerifyCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyCustomerAsync(Domain.Models.Request.VerifyCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:15:07 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:15:07 [INF] Executed action "Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)" in 3.6149ms
+00:15:07 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:15:07 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 49 - 400 - application/problem+json;+charset=utf-8 12.4180ms
+00:15:31 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 54
+00:15:31 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:15:31 [INF] Route matched with "{action = \"VerifyCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyCustomerAsync(Domain.Models.Request.VerifyCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:15:31 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:15:31 [INF] Executed action "Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)" in 0.5881ms
+00:15:31 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:15:31 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 54 - 400 - application/problem+json;+charset=utf-8 1.1871ms
+00:16:16 [INF] Now listening on: "http://localhost:5264"
+00:16:16 [INF] Application started. Press Ctrl+C to shut down.
+00:16:16 [INF] Hosting environment: "Development"
+00:16:16 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:16:18 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:16:19 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 999.9274ms
+00:16:19 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:16:19 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:16:19 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 33.1905ms
+00:16:19 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 122.1613ms
+00:16:19 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:16:20 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 447.7763ms
+00:17:41 [INF] Now listening on: "http://localhost:5264"
+00:17:41 [INF] Application started. Press Ctrl+C to shut down.
+00:17:41 [INF] Hosting environment: "Development"
+00:17:41 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:17:42 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:17:43 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 724.4185ms
+00:17:43 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:17:43 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:17:43 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.8140ms
+00:17:43 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.6881ms
+00:17:43 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:17:44 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 360.3252ms
+00:17:48 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 48
+00:17:48 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:17:48 [INF] Route matched with "{action = \"VerifyCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyCustomerAsync(Domain.Models.Request.VerifyCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:17:48 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:17:48 [INF] Executed action "Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)" in 457.6631ms
+00:17:48 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:17:48 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 48 - 400 - application/problem+json;+charset=utf-8 551.6699ms
+00:18:05 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 53
+00:18:05 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:18:05 [INF] Route matched with "{action = \"VerifyCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyCustomerAsync(Domain.Models.Request.VerifyCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:18:06 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:18:08 [INF] Executed DbCommand ("162"ms) [Parameters=["@__8__locals1_req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__8__locals1_req_PhoneNumber_0"
+00:18:08 [INF] Executed DbCommand ("78"ms) [Parameters=["@__customer_PhoneNumber_0='?' (Size = 4000), @__8__locals1_req_OTP_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE ([o].[CustomerPhoneNo] = @__customer_PhoneNumber_0) AND ([o].[OTP] = @__8__locals1_req_OTP_1)"
+00:18:08 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:18:08 [INF] Executed action "Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)" in 3524.4696ms
+00:18:08 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:18:08 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 53 - 200 - application/json;+charset=utf-8 3541.2360ms
+00:18:40 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 53
+00:18:40 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:18:40 [INF] Route matched with "{action = \"VerifyCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyCustomerAsync(Domain.Models.Request.VerifyCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:18:40 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:18:40 [INF] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__8__locals1_req_PhoneNumber_0"
+00:18:40 [INF] Executed DbCommand ("2"ms) [Parameters=["@__customer_PhoneNumber_0='?' (Size = 4000), @__8__locals1_req_OTP_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE ([o].[CustomerPhoneNo] = @__customer_PhoneNumber_0) AND ([o].[OTP] = @__8__locals1_req_OTP_1)"
+00:18:41 [INF] Executed DbCommand ("252"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [DateVerified] = @p0, [isVerified] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;"
+00:18:41 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:18:41 [INF] Executed action "Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)" in 778.5049ms
+00:18:41 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:18:41 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 53 - 200 - application/json;+charset=utf-8 787.6083ms
+00:21:07 [INF] Now listening on: "http://localhost:5264"
+00:21:07 [INF] Application started. Press Ctrl+C to shut down.
+00:21:07 [INF] Hosting environment: "Development"
+00:21:07 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:21:08 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:21:09 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:21:09 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:21:09 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.0207ms
+00:21:09 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 960.0446ms
+00:21:09 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 125.3492ms
+00:21:10 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:21:10 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 359.0511ms
+00:21:14 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Customer/GetAllCustomers - -
+00:21:14 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)"'
+00:21:14 [INF] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomersAsync()" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:21:16 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:21:19 [INF] Executed DbCommand ("990"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[PhoneNumber], [c].[EmailAddress], [s].[StateName], [l].[lgaName], [c].[isVerified], [c].[DateCreated], [c].[DateVerified]
+FROM [Customers] AS [c]
+INNER JOIN [State] AS [s] ON [c].[StateId] = [s].[Id]
+INNER JOIN [Lga] AS [l] ON [c].[LgaId] = [l].[Id]"
+00:21:19 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:21:19 [INF] Executed action "Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)" in 4655.6463ms
+00:21:19 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)"'
+00:21:19 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Customer/GetAllCustomers - - - 200 - application/json;+charset=utf-8 4751.2979ms
+00:21:47 [INF] Now listening on: "http://localhost:5264"
+00:21:47 [INF] Application started. Press Ctrl+C to shut down.
+00:21:47 [INF] Hosting environment: "Development"
+00:21:47 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:21:49 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:21:49 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 730.8426ms
+00:21:49 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:21:49 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:21:49 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 17.5360ms
+00:21:49 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 103.3879ms
+00:21:50 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:21:50 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 256.0394ms
+00:21:55 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Customer/GetAllCustomers - -
+00:21:55 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)"'
+00:21:55 [INF] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomersAsync()" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:21:57 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:21:58 [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[PhoneNumber], [c].[EmailAddress], [s].[StateName], [l].[lgaName], [c].[isVerified], [c].[DateCreated], [c].[DateVerified]
+FROM [Customers] AS [c]
+INNER JOIN [State] AS [s] ON [c].[StateId] = [s].[Id]
+INNER JOIN [Lga] AS [l] ON [c].[LgaId] = [l].[Id]"
+00:21:58 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:21:58 [INF] Executed action "Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)" in 3458.654ms
+00:21:58 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)"'
+00:21:58 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Customer/GetAllCustomers - - - 200 - application/json;+charset=utf-8 3538.8076ms
+00:22:28 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 53
+00:22:28 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:22:28 [INF] Route matched with "{action = \"VerifyCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyCustomerAsync(Domain.Models.Request.VerifyCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:22:28 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:22:28 [INF] Executed DbCommand ("60"ms) [Parameters=["@__8__locals1_req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__8__locals1_req_PhoneNumber_0"
+00:22:28 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:22:28 [INF] Executed action "Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)" in 488.5276ms
+00:22:28 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:22:28 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 53 - 200 - application/json;+charset=utf-8 546.2987ms
+00:22:48 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/OTP/GetCustomerOTP?customerPhoneNo=07144332271 - -
+00:22:48 [INF] Executing endpoint '"Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)"'
+00:22:48 [INF] Route matched with "{action = \"GetCustomerOTP\", controller = \"OTP\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerOTPAsync(System.String)" on controller "Assessment.Controllers.OTPController" ("Assessment").
+00:22:49 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:22:49 [INF] Executed DbCommand ("44"ms) [Parameters=["@__Trim_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE [o].[CustomerPhoneNo] = @__Trim_0"
+00:22:49 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:22:49 [INF] Executed action "Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)" in 417.3217ms
+00:22:49 [INF] Executed endpoint '"Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)"'
+00:22:49 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/OTP/GetCustomerOTP?customerPhoneNo=07144332271 - - - 200 - application/json;+charset=utf-8 423.8526ms
+00:23:27 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/OTP/GetCustomerOTP?customerPhoneNo=0714433227 - -
+00:23:27 [INF] Executing endpoint '"Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)"'
+00:23:27 [INF] Route matched with "{action = \"GetCustomerOTP\", controller = \"OTP\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerOTPAsync(System.String)" on controller "Assessment.Controllers.OTPController" ("Assessment").
+00:23:27 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:23:28 [INF] Executed DbCommand ("4"ms) [Parameters=["@__Trim_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE [o].[CustomerPhoneNo] = @__Trim_0"
+00:23:28 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:23:28 [INF] Executed action "Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)" in 17.5889ms
+00:23:28 [INF] Executed endpoint '"Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)"'
+00:23:28 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/OTP/GetCustomerOTP?customerPhoneNo=0714433227 - - - 200 - application/json;+charset=utf-8 28.4579ms
+00:23:35 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/OTP/GetCustomerOTP?customerPhoneNo=07144332271 - -
+00:23:35 [INF] Executing endpoint '"Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)"'
+00:23:35 [INF] Route matched with "{action = \"GetCustomerOTP\", controller = \"OTP\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerOTPAsync(System.String)" on controller "Assessment.Controllers.OTPController" ("Assessment").
+00:23:35 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:23:35 [INF] Executed DbCommand ("1"ms) [Parameters=["@__Trim_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE [o].[CustomerPhoneNo] = @__Trim_0"
+00:23:35 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:23:35 [INF] Executed action "Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)" in 10.5142ms
+00:23:35 [INF] Executed endpoint '"Assessment.Controllers.OTPController.GetCustomerOTPAsync (Assessment)"'
+00:23:35 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/OTP/GetCustomerOTP?customerPhoneNo=07144332271 - - - 200 - application/json;+charset=utf-8 12.5953ms
+00:24:07 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/OTP/SendOTP?customerPhoneNo=07144332271 - 0
+00:24:07 [INF] Executing endpoint '"Assessment.Controllers.OTPController.SendOTPAsync (Assessment)"'
+00:24:07 [INF] Route matched with "{action = \"SendOTP\", controller = \"OTP\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendOTPAsync(System.String)" on controller "Assessment.Controllers.OTPController" ("Assessment").
+00:24:13 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:24:13 [INF] Executed DbCommand ("1"ms) [Parameters=["@__Trim_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__Trim_0"
+00:24:13 [INF] Executed DbCommand ("22"ms) [Parameters=["@__customer_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE [o].[CustomerPhoneNo] = @__customer_PhoneNumber_0"
+00:24:14 [INF] Executed DbCommand ("455"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [OtpGenerated] SET [OTP] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+00:24:14 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:24:14 [INF] Executed action "Assessment.Controllers.OTPController.SendOTPAsync (Assessment)" in 6474.4883ms
+00:24:14 [INF] Executed endpoint '"Assessment.Controllers.OTPController.SendOTPAsync (Assessment)"'
+00:24:14 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/OTP/SendOTP?customerPhoneNo=07144332271 - 0 - 200 - application/json;+charset=utf-8 6491.2615ms
+00:25:46 [INF] Now listening on: "http://localhost:5264"
+00:25:46 [INF] Application started. Press Ctrl+C to shut down.
+00:25:46 [INF] Hosting environment: "Development"
+00:25:46 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:25:47 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:25:48 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:25:48 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 905.1554ms
+00:25:48 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:25:48 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 38.7751ms
+00:25:48 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 110.8711ms
+00:25:48 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:25:49 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 297.7252ms
+00:26:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Customer/GetAllCustomers - -
+00:26:00 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)"'
+00:26:00 [INF] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomersAsync()" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:26:02 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:26:03 [INF] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[PhoneNumber], [c].[EmailAddress], [s].[StateName], [l].[lgaName], [c].[isVerified], [c].[DateCreated], [c].[DateVerified]
+FROM [Customers] AS [c]
+INNER JOIN [State] AS [s] ON [c].[StateId] = [s].[Id]
+INNER JOIN [Lga] AS [l] ON [c].[LgaId] = [l].[Id]"
+00:26:04 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:26:04 [INF] Executed action "Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)" in 3606.6459ms
+00:26:04 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)"'
+00:26:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Customer/GetAllCustomers - - - 200 - application/json;+charset=utf-8 3686.7663ms
+00:49:21 [INF] Now listening on: "http://localhost:5264"
+00:49:21 [INF] Application started. Press Ctrl+C to shut down.
+00:49:21 [INF] Hosting environment: "Development"
+00:49:21 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+00:49:23 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+00:49:23 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+00:49:23 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.2448ms
+00:49:23 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 800.9872ms
+00:49:23 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+00:49:23 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.3339ms
+00:49:24 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+00:49:24 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 314.1935ms
+00:50:04 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - -
+00:50:04 [INF] Executing endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+00:50:04 [INF] Route matched with "{action = \"GetBanks\", controller = \"Banks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBanksAsync()" on controller "Assessment.Controllers.BanksController" ("Assessment").
+00:50:07 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GetAllBanksResponse"'.
+00:50:07 [INF] Executed action "Assessment.Controllers.BanksController.GetBanksAsync (Assessment)" in 2988.4812ms
+00:50:07 [INF] Executed endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+00:50:07 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - - - 200 - application/json;+charset=utf-8 3056.1229ms
+00:50:47 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 134
+00:50:47 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:50:47 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:50:48 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+00:50:48 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 417.6653ms
+00:50:48 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:50:48 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 134 - 400 - application/problem+json;+charset=utf-8 454.3644ms
+00:51:01 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 137
+00:51:01 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:51:01 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:51:10 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:51:12 [INF] Executed DbCommand ("699"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000), @__req_EmailAddress_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE ([c].[PhoneNumber] = @__req_PhoneNumber_0) AND ([c].[EmailAddress] = @__req_EmailAddress_1)"
+00:51:12 [INF] Executed DbCommand ("8"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+00:51:13 [INF] Executed DbCommand ("1"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[StateName]
+FROM [State] AS [s]
+WHERE [s].[Id] = @__stateId_0"
+00:51:13 [INF] Executed DbCommand ("2"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+00:51:13 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:51:13 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 11585.2213ms
+00:51:13 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:51:13 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 137 - 200 - application/json;+charset=utf-8 11599.0252ms
+00:51:40 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 138
+00:51:40 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:51:40 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:51:45 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:51:45 [INF] Executed DbCommand ("2"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000), @__req_EmailAddress_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE ([c].[PhoneNumber] = @__req_PhoneNumber_0) AND ([c].[EmailAddress] = @__req_EmailAddress_1)"
+00:51:45 [INF] Executed DbCommand ("1"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+00:51:45 [INF] Executed DbCommand ("1"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[StateName]
+FROM [State] AS [s]
+WHERE [s].[Id] = @__stateId_0"
+00:51:45 [INF] Executed DbCommand ("1"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+00:51:45 [INF] Executed DbCommand ("44"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Customers] ([DateCreated], [DateVerified], [EmailAddress], [LgaId], [PasswordHash], [PhoneNumber], [Salt], [StateId], [isVerified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Customers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+00:51:49 [INF] Executed DbCommand ("2"ms) [Parameters=["@__Trim_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__Trim_0"
+00:51:50 [INF] Executed DbCommand ("1"ms) [Parameters=["@__customer_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE [o].[CustomerPhoneNo] = @__customer_PhoneNumber_0"
+00:51:50 [INF] Executed DbCommand ("108"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [OtpGenerated] ([CustomerPhoneNo], [DateGenerated], [OTP])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [OtpGenerated]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+00:51:50 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:51:50 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 9752.9737ms
+00:51:50 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+00:51:50 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 138 - 200 - application/json;+charset=utf-8 9755.6499ms
+00:52:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 54
+00:52:30 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:52:30 [INF] Route matched with "{action = \"VerifyCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyCustomerAsync(Domain.Models.Request.VerifyCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+00:52:30 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+00:52:30 [INF] Executed DbCommand ("1"ms) [Parameters=["@__8__locals1_req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__8__locals1_req_PhoneNumber_0"
+00:52:30 [INF] Executed DbCommand ("3"ms) [Parameters=["@__customer_PhoneNumber_0='?' (Size = 4000), @__8__locals1_req_OTP_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE ([o].[CustomerPhoneNo] = @__customer_PhoneNumber_0) AND ([o].[OTP] = @__8__locals1_req_OTP_1)"
+00:52:30 [INF] Executed DbCommand ("96"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [DateVerified] = @p0, [isVerified] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;"
+00:52:30 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+00:52:30 [INF] Executed action "Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)" in 222.8686ms
+00:52:30 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.VerifyCustomerAsync (Assessment)"'
+00:52:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/v1/Customer/VerifyCustomer application/json 54 - 200 - application/json;+charset=utf-8 226.4375ms
+01:00:16 [INF] Now listening on: "http://localhost:5264"
+01:00:17 [INF] Application started. Press Ctrl+C to shut down.
+01:00:17 [INF] Hosting environment: "Development"
+01:00:17 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+01:00:18 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+01:00:19 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+01:00:19 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+01:00:19 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 1188.6307ms
+01:00:19 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 38.8647ms
+01:00:19 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.3840ms
+01:00:19 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+01:00:19 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 510.0248ms
+01:01:25 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllStates - -
+01:01:25 [INF] Executing endpoint '"Assessment.Controllers.StateController.GetAllStatesAsync (Assessment)"'
+01:01:25 [INF] Route matched with "{action = \"GetAllStates\", controller = \"State\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStatesAsync()" on controller "Assessment.Controllers.StateController" ("Assessment").
+01:01:26 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+01:01:28 [INF] Executed DbCommand ("133"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [State] AS [s]"
+01:01:28 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[StateName]
+FROM [State] AS [s]"
+01:01:28 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+01:01:28 [INF] Executed action "Assessment.Controllers.StateController.GetAllStatesAsync (Assessment)" in 3808.7827ms
+01:01:28 [INF] Executed endpoint '"Assessment.Controllers.StateController.GetAllStatesAsync (Assessment)"'
+01:01:28 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllStates - - - 200 - application/json;+charset=utf-8 3895.0927ms
+01:01:43 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Customer/GetAllCustomers - -
+01:01:43 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)"'
+01:01:43 [INF] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomersAsync()" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+01:01:43 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+01:01:43 [INF] Executed DbCommand ("185"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[PhoneNumber], [c].[EmailAddress], [s].[StateName], [l].[lgaName], [c].[isVerified], [c].[DateCreated], [c].[DateVerified]
+FROM [Customers] AS [c]
+INNER JOIN [State] AS [s] ON [c].[StateId] = [s].[Id]
+INNER JOIN [Lga] AS [l] ON [c].[LgaId] = [l].[Id]"
+01:01:43 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+01:01:43 [INF] Executed action "Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)" in 488.4555ms
+01:01:43 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.GetAllCustomersAsync (Assessment)"'
+01:01:43 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Customer/GetAllCustomers - - - 200 - application/json;+charset=utf-8 500.3243ms

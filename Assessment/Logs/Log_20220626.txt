@@ -1,0 +1,1088 @@
+19:43:48 [INF] Now listening on: "http://localhost:5264"
+19:43:48 [INF] Application started. Press Ctrl+C to shut down.
+19:43:48 [INF] Hosting environment: "Development"
+19:43:48 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+19:43:51 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger - -
+19:43:52 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger - - - 301 0 - 799.5840ms
+19:43:52 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:43:54 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/swagger-ui-bundle.js - -
+19:43:54 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/swagger-ui.css - -
+19:43:54 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/swagger-ui-standalone-preset.js - -
+19:43:54 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:43:54 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:43:54 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 61.8988ms
+19:43:54 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 1970.0127ms
+19:43:54 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+19:43:54 [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+19:43:54 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 201.3503ms
+19:43:54 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/swagger-ui.css - - - 200 143632 text/css 201.2291ms
+19:43:55 [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+19:43:55 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 390.6129ms
+19:43:55 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 461.0424ms
+19:43:55 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:43:55 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/favicon-32x32.png - -
+19:43:55 [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+19:43:55 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/favicon-32x32.png - - - 200 628 image/png 0.4272ms
+19:43:56 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:43:58 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 3387.1588ms
+19:44:37 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:44:37 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 42.6977ms
+19:44:37 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:44:37 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:44:37 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 0.2275ms
+19:44:37 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 140.7100ms
+19:44:37 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:44:37 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:44:37 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 3.8365ms
+19:44:45 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:44:45 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 17.1965ms
+19:44:45 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:44:45 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 0.1322ms
+19:44:45 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:44:45 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.4704ms
+19:44:45 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:44:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:44:45 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 22.6255ms
+19:45:41 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:45:41 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 34.3661ms
+19:45:41 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:45:41 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:45:41 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 0.1138ms
+19:45:41 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.8627ms
+19:45:41 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:45:41 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:45:41 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 4.6489ms
+19:45:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:45:46 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 7.2410ms
+19:45:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:45:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:45:46 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 0.1876ms
+19:45:46 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.5183ms
+19:45:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:45:46 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:45:46 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 2.2652ms
+19:46:31 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:46:31 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 20.6347ms
+19:46:31 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:46:31 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:46:31 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 0.4343ms
+19:46:31 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.8217ms
+19:46:31 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:46:31 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:46:31 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 4.1765ms
+19:48:29 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:48:29 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:48:29 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/html;+charset=utf-8 282.2623ms
+19:48:29 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:48:29 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:48:29 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 0.1952ms
+19:48:29 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.1188ms
+19:48:29 [INF] Request starting HTTP/1.1 GET http://localhost:5264/favicon.ico - -
+19:48:30 [INF] Request finished HTTP/1.1 GET http://localhost:5264/favicon.ico - - - 404 0 - 133.2303ms
+19:50:39 [INF] Now listening on: "http://localhost:5264"
+19:50:39 [INF] Application started. Press Ctrl+C to shut down.
+19:50:39 [INF] Hosting environment: "Development"
+19:50:39 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+19:50:40 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:50:41 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:50:41 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:50:41 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 17.4310ms
+19:50:41 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 707.6506ms
+19:50:41 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 102.4586ms
+19:50:41 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:50:41 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v1/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:50:41 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 198.2066ms
+19:51:10 [INF] Now listening on: "http://localhost:5264"
+19:51:10 [INF] Application started. Press Ctrl+C to shut down.
+19:51:10 [INF] Hosting environment: "Development"
+19:51:10 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+19:51:10 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:51:11 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:51:11 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:51:11 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 25.8877ms
+19:51:11 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 913.0403ms
+19:51:11 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.2876ms
+19:51:12 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:51:12 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v1/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:51:12 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 605.7888ms
+19:51:22 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:51:22 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v1/State" for actions - Assessment.Controllers.StateController.GetAllStatesAsync (Assessment),Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment),Assessment.Controllers.StateController.GetStateByIdAsync (Assessment). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:51:22 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 500 - text/html;+charset=utf-8 46.7946ms
+19:51:22 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:51:22 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:51:22 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 1.4543ms
+19:51:22 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.5733ms
+19:55:28 [INF] Now listening on: "http://localhost:5264"
+19:55:29 [INF] Application started. Press Ctrl+C to shut down.
+19:55:29 [INF] Hosting environment: "Development"
+19:55:29 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+19:55:29 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:55:30 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:55:30 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:55:30 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.6510ms
+19:55:30 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 850.0061ms
+19:55:30 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 117.0686ms
+19:55:30 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:55:31 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 459.5865ms
+19:58:04 [INF] Now listening on: "http://localhost:5264"
+19:58:04 [INF] Application started. Press Ctrl+C to shut down.
+19:58:04 [INF] Hosting environment: "Development"
+19:58:04 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+19:58:06 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+19:58:06 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 672.7025ms
+19:58:06 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+19:58:06 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+19:58:06 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 23.6577ms
+19:58:07 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.6376ms
+19:58:07 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+19:58:07 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 192.0049ms
+19:58:14 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - -
+19:58:15 [INF] Executing endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+19:58:15 [INF] Route matched with "{action = \"GetBanks\", controller = \"Banks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBanksAsync()" on controller "Assessment.Controllers.BanksController" ("Assessment").
+19:58:15 [INF] Executed action "Assessment.Controllers.BanksController.GetBanksAsync (Assessment)" in 19.2978ms
+19:58:15 [INF] Executed endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+19:58:15 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Domain.Repository.Interface.IHttpClientRepository' while attempting to activate 'Assessment.Controllers.BanksController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+19:58:15 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - - - 500 - text/plain;+charset=utf-8 1306.2742ms
+20:02:04 [INF] Now listening on: "http://localhost:5264"
+20:02:04 [INF] Application started. Press Ctrl+C to shut down.
+20:02:04 [INF] Hosting environment: "Development"
+20:02:04 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+20:02:05 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+20:02:06 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+20:02:06 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+20:02:06 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 781.8502ms
+20:02:06 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 16.8944ms
+20:02:06 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.2207ms
+20:02:06 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+20:02:06 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 246.3083ms
+20:02:09 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - -
+20:02:09 [INF] Executing endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+20:02:09 [INF] Route matched with "{action = \"GetBanks\", controller = \"Banks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBanksAsync()" on controller "Assessment.Controllers.BanksController" ("Assessment").
+20:02:36 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GetAllBanksResponse"'.
+20:02:36 [INF] Executed action "Assessment.Controllers.BanksController.GetBanksAsync (Assessment)" in 27256.4569ms
+20:02:36 [INF] Executed endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+20:02:36 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - - - 200 - application/json;+charset=utf-8 27318.3004ms
+20:04:05 [INF] Now listening on: "http://localhost:5264"
+20:04:05 [INF] Application started. Press Ctrl+C to shut down.
+20:04:05 [INF] Hosting environment: "Development"
+20:04:05 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+20:04:07 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+20:04:07 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+20:04:07 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+20:04:07 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 17.2246ms
+20:04:08 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 872.4802ms
+20:04:08 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 115.7774ms
+20:04:08 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+20:04:08 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 322.5538ms
+20:04:11 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - -
+20:04:11 [INF] Executing endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+20:04:12 [INF] Route matched with "{action = \"GetBanks\", controller = \"Banks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBanksAsync()" on controller "Assessment.Controllers.BanksController" ("Assessment").
+20:04:17 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GetAllBanksResponse"'.
+20:04:17 [INF] Executed action "Assessment.Controllers.BanksController.GetBanksAsync (Assessment)" in 5451.3402ms
+20:04:17 [INF] Executed endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+20:04:17 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - - - 200 - application/json;+charset=utf-8 5510.5249ms
+20:21:47 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "None"
+20:23:31 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+20:24:13 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+20:30:10 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+20:33:49 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+20:33:56 [INF] Executed DbCommand ("5,439"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [customerDB];"
+20:33:58 [INF] Executed DbCommand ("1,748"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [customerDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;"
+20:33:58 [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+20:33:59 [INF] Executed DbCommand ("688"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+20:33:59 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+20:33:59 [INF] Executed DbCommand ("85"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+20:33:59 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+20:33:59 [INF] Applying migration '"20220626192332_InitialMigrations"'.
+20:33:59 [INF] Executed DbCommand ("83"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OtpGenerated] (
+    [Id] int NOT NULL IDENTITY,
+    [CustomerPhoneNo] nvarchar(max) NULL,
+    [OTP] nvarchar(max) NULL,
+    [DateGenerated] datetime2 NOT NULL,
+    CONSTRAINT [PK_OtpGenerated] PRIMARY KEY ([Id])
+);"
+20:33:59 [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [State] (
+    [Id] int NOT NULL IDENTITY,
+    [StateName] nvarchar(max) NULL,
+    CONSTRAINT [PK_State] PRIMARY KEY ([Id])
+);"
+20:33:59 [INF] Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Lga] (
+    [Id] int NOT NULL IDENTITY,
+    [StateId] int NOT NULL,
+    [lgaName] nvarchar(max) NULL,
+    CONSTRAINT [PK_Lga] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Lga_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id]) ON DELETE CASCADE
+);"
+20:33:59 [ERR] Failed executing DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] int NOT NULL IDENTITY,
+    [PhoneNumber] nvarchar(max) NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [Salt] nvarchar(max) NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [StateId] int NOT NULL,
+    [LgaId] int NOT NULL,
+    [isVerified] bit NOT NULL,
+    [DateVerified] datetime2 NULL,
+    [DateCreated] datetime2 NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Customers_Lga_LgaId] FOREIGN KEY ([LgaId]) REFERENCES [Lga] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Customers_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id]) ON DELETE CASCADE
+);"
+22:19:28 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:19:30 [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:19:30 [INF] Executed DbCommand ("392"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+22:19:30 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:19:30 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+22:19:31 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+22:19:31 [INF] Applying migration '"20220626192332_InitialMigrations"'.
+22:19:31 [INF] Executed DbCommand ("383"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OtpGenerated] (
+    [Id] int NOT NULL IDENTITY,
+    [CustomerPhoneNo] nvarchar(max) NULL,
+    [OTP] nvarchar(max) NULL,
+    [DateGenerated] datetime2 NOT NULL,
+    CONSTRAINT [PK_OtpGenerated] PRIMARY KEY ([Id])
+);"
+22:19:31 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [State] (
+    [Id] int NOT NULL IDENTITY,
+    [StateName] nvarchar(max) NULL,
+    CONSTRAINT [PK_State] PRIMARY KEY ([Id])
+);"
+22:19:31 [INF] Executed DbCommand ("58"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Lga] (
+    [Id] int NOT NULL IDENTITY,
+    [StateId] int NOT NULL,
+    [lgaName] nvarchar(max) NULL,
+    CONSTRAINT [PK_Lga] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Lga_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id]) ON DELETE CASCADE
+);"
+22:19:31 [ERR] Failed executing DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] int NOT NULL IDENTITY,
+    [PhoneNumber] nvarchar(max) NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [Salt] nvarchar(max) NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [StateId] int NOT NULL,
+    [LgaId] int NOT NULL,
+    [isVerified] bit NOT NULL,
+    [DateVerified] datetime2 NULL,
+    [DateCreated] datetime2 NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Customers_Lga_LgaId] FOREIGN KEY ([LgaId]) REFERENCES [Lga] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Customers_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id]) ON DELETE CASCADE
+);"
+22:20:54 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:21:32 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:21:41 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:21:41 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:21:42 [INF] Executed DbCommand ("298"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+22:21:42 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:21:42 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+22:21:42 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+22:21:42 [INF] Applying migration '"20220626212133_InitialMigrations"'.
+22:21:42 [INF] Executed DbCommand ("295"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OtpGenerated] (
+    [Id] int NOT NULL IDENTITY,
+    [CustomerPhoneNo] nvarchar(max) NULL,
+    [OTP] nvarchar(max) NULL,
+    [DateGenerated] datetime2 NOT NULL,
+    CONSTRAINT [PK_OtpGenerated] PRIMARY KEY ([Id])
+);"
+22:21:42 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [State] (
+    [Id] int NOT NULL IDENTITY,
+    [StateName] nvarchar(max) NULL,
+    CONSTRAINT [PK_State] PRIMARY KEY ([Id])
+);"
+22:21:42 [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Lga] (
+    [Id] int NOT NULL IDENTITY,
+    [StateId] int NOT NULL,
+    [lgaName] nvarchar(max) NULL,
+    CONSTRAINT [PK_Lga] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Lga_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id]) ON DELETE CASCADE
+);"
+22:21:42 [ERR] Failed executing DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] int NOT NULL IDENTITY,
+    [PhoneNumber] nvarchar(max) NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [Salt] nvarchar(max) NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [StateId] int NOT NULL,
+    [LgaId] int NOT NULL,
+    [isVerified] bit NOT NULL,
+    [DateVerified] datetime2 NULL,
+    [DateCreated] datetime2 NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Customers_Lga_LgaId] FOREIGN KEY ([LgaId]) REFERENCES [Lga] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Customers_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id]) ON DELETE CASCADE
+);"
+22:23:03 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:23:13 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:23:17 [INF] Executed DbCommand ("2,931"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [customerDB];"
+22:23:18 [INF] Executed DbCommand ("1,047"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [customerDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;"
+22:23:18 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:23:19 [INF] Executed DbCommand ("598"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+22:23:19 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:23:19 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+22:23:19 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+22:23:19 [INF] Applying migration '"20220626212304_InitialMigrations"'.
+22:23:19 [INF] Executed DbCommand ("594"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OtpGenerated] (
+    [Id] int NOT NULL IDENTITY,
+    [CustomerPhoneNo] nvarchar(max) NULL,
+    [OTP] nvarchar(max) NULL,
+    [DateGenerated] datetime2 NOT NULL,
+    CONSTRAINT [PK_OtpGenerated] PRIMARY KEY ([Id])
+);"
+22:23:19 [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [State] (
+    [Id] int NOT NULL IDENTITY,
+    [StateName] nvarchar(max) NULL,
+    CONSTRAINT [PK_State] PRIMARY KEY ([Id])
+);"
+22:23:19 [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Lga] (
+    [Id] int NOT NULL IDENTITY,
+    [StateId] int NOT NULL,
+    [lgaName] nvarchar(max) NULL,
+    CONSTRAINT [PK_Lga] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Lga_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id]) ON DELETE CASCADE
+);"
+22:23:19 [ERR] Failed executing DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] int NOT NULL IDENTITY,
+    [PhoneNumber] nvarchar(max) NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [Salt] nvarchar(max) NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [StateId] int NOT NULL,
+    [LgaId] int NOT NULL,
+    [isVerified] bit NOT NULL,
+    [DateVerified] datetime2 NULL,
+    [DateCreated] datetime2 NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Customers_Lga_LgaId] FOREIGN KEY ([LgaId]) REFERENCES [Lga] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Customers_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id]) ON DELETE CASCADE
+);"
+22:27:29 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:27:36 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:27:39 [INF] Executed DbCommand ("1,473"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [customerDB];"
+22:27:39 [INF] Executed DbCommand ("567"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [customerDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;"
+22:27:40 [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:27:40 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+22:27:40 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:27:40 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+22:27:40 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+22:27:40 [INF] Applying migration '"20220626212729_InitialMigrations"'.
+22:27:40 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] int NOT NULL IDENTITY,
+    [PhoneNumber] nvarchar(max) NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [Salt] nvarchar(max) NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [StateId] int NOT NULL,
+    [LgaId] int NOT NULL,
+    [isVerified] bit NOT NULL,
+    [DateVerified] datetime2 NULL,
+    [DateCreated] datetime2 NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id])
+);"
+22:27:40 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Lga] (
+    [Id] int NOT NULL IDENTITY,
+    [StateId] int NOT NULL,
+    [lgaName] nvarchar(max) NULL,
+    CONSTRAINT [PK_Lga] PRIMARY KEY ([Id])
+);"
+22:27:40 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OtpGenerated] (
+    [Id] int NOT NULL IDENTITY,
+    [CustomerPhoneNo] nvarchar(max) NULL,
+    [OTP] nvarchar(max) NULL,
+    [DateGenerated] datetime2 NOT NULL,
+    CONSTRAINT [PK_OtpGenerated] PRIMARY KEY ([Id])
+);"
+22:27:40 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [State] (
+    [Id] int NOT NULL IDENTITY,
+    [StateName] nvarchar(max) NULL,
+    CONSTRAINT [PK_State] PRIMARY KEY ([Id])
+);"
+22:27:40 [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220626212729_InitialMigrations', N'6.0.6');"
+22:32:02 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:33:25 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:33:28 [INF] Executed DbCommand ("2,225"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [customerDB];"
+22:33:29 [INF] Executed DbCommand ("644"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [customerDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;"
+22:33:29 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:33:30 [INF] Executed DbCommand ("576"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+22:33:30 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:33:30 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+22:33:30 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+22:33:30 [INF] Applying migration '"20220626213203_InitialMigrations"'.
+22:33:30 [INF] Executed DbCommand ("102"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OtpGenerated] (
+    [Id] int NOT NULL IDENTITY,
+    [CustomerPhoneNo] nvarchar(max) NULL,
+    [OTP] nvarchar(max) NULL,
+    [DateGenerated] datetime2 NOT NULL,
+    CONSTRAINT [PK_OtpGenerated] PRIMARY KEY ([Id])
+);"
+22:33:30 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [State] (
+    [Id] int NOT NULL IDENTITY,
+    [StateName] nvarchar(max) NULL,
+    CONSTRAINT [PK_State] PRIMARY KEY ([Id])
+);"
+22:33:30 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Lga] (
+    [Id] int NOT NULL IDENTITY,
+    [StateId] int NOT NULL,
+    [lgaName] nvarchar(max) NULL,
+    CONSTRAINT [PK_Lga] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Lga_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id])
+);"
+22:33:30 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] int NOT NULL IDENTITY,
+    [PhoneNumber] nvarchar(max) NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [Salt] nvarchar(max) NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [StateId] int NOT NULL,
+    [LgaId] int NOT NULL,
+    [isVerified] bit NOT NULL,
+    [DateVerified] datetime2 NULL,
+    [DateCreated] datetime2 NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Customers_Lga_LgaId] FOREIGN KEY ([LgaId]) REFERENCES [Lga] ([Id]),
+    CONSTRAINT [FK_Customers_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id])
+);"
+22:33:30 [INF] Executed DbCommand ("88"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Customers_LgaId] ON [Customers] ([LgaId]);"
+22:33:30 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Customers_StateId] ON [Customers] ([StateId]);"
+22:33:30 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Lga_StateId] ON [Lga] ([StateId]);"
+22:33:30 [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220626213203_InitialMigrations', N'6.0.6');"
+22:45:59 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:46:27 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:46:30 [INF] Executed DbCommand ("1,545"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [customerDB];"
+22:46:30 [INF] Executed DbCommand ("613"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [customerDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;"
+22:46:30 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:46:31 [INF] Executed DbCommand ("242"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+22:46:31 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+22:46:31 [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+22:46:31 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+22:46:31 [INF] Applying migration '"20220626214559_InitialMigrations"'.
+22:46:31 [INF] Executed DbCommand ("334"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OtpGenerated] (
+    [Id] int NOT NULL IDENTITY,
+    [CustomerPhoneNo] nvarchar(max) NULL,
+    [OTP] nvarchar(max) NULL,
+    [DateGenerated] datetime2 NOT NULL,
+    CONSTRAINT [PK_OtpGenerated] PRIMARY KEY ([Id])
+);"
+22:46:31 [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [State] (
+    [Id] int NOT NULL IDENTITY,
+    [StateName] nvarchar(max) NULL,
+    CONSTRAINT [PK_State] PRIMARY KEY ([Id])
+);"
+22:46:31 [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Lga] (
+    [Id] int NOT NULL IDENTITY,
+    [localId] int NOT NULL,
+    [StateId] int NOT NULL,
+    [lgaName] nvarchar(max) NULL,
+    CONSTRAINT [PK_Lga] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Lga_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id])
+);"
+22:46:31 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] int NOT NULL IDENTITY,
+    [PhoneNumber] nvarchar(max) NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [Salt] nvarchar(max) NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [StateId] int NOT NULL,
+    [LgaId] int NOT NULL,
+    [isVerified] bit NOT NULL,
+    [DateVerified] datetime2 NULL,
+    [DateCreated] datetime2 NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Customers_Lga_LgaId] FOREIGN KEY ([LgaId]) REFERENCES [Lga] ([Id]),
+    CONSTRAINT [FK_Customers_State_StateId] FOREIGN KEY ([StateId]) REFERENCES [State] ([Id])
+);"
+22:46:31 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Customers_LgaId] ON [Customers] ([LgaId]);"
+22:46:31 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Customers_StateId] ON [Customers] ([StateId]);"
+22:46:31 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Lga_StateId] ON [Lga] ([StateId]);"
+22:46:31 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220626214559_InitialMigrations', N'6.0.6');"
+22:51:41 [INF] Now listening on: "http://localhost:5264"
+22:51:41 [INF] Application started. Press Ctrl+C to shut down.
+22:51:41 [INF] Hosting environment: "Development"
+22:51:41 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+22:51:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+22:51:48 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 2088.4579ms
+22:51:48 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+22:51:48 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+22:51:48 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.0033ms
+22:51:49 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 814.0358ms
+22:51:49 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+22:51:50 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1056.3625ms
+22:52:03 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllStates - -
+22:52:03 [INF] Executing endpoint '"Assessment.Controllers.StateController.GetAllStatesAsync (Assessment)"'
+22:52:03 [INF] Route matched with "{action = \"GetAllStates\", controller = \"State\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStatesAsync()" on controller "Assessment.Controllers.StateController" ("Assessment").
+22:52:08 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:52:13 [INF] Executed DbCommand ("117"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [State] AS [s]"
+22:52:13 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[StateName]
+FROM [State] AS [s]"
+22:52:13 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+22:52:13 [INF] Executed action "Assessment.Controllers.StateController.GetAllStatesAsync (Assessment)" in 10108.2599ms
+22:52:13 [INF] Executed endpoint '"Assessment.Controllers.StateController.GetAllStatesAsync (Assessment)"'
+22:52:13 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllStates - - - 200 - application/json;+charset=utf-8 10799.7441ms
+22:52:47 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllLgaByStateId?stateId=25 - -
+22:52:47 [INF] Executing endpoint '"Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)"'
+22:52:47 [INF] Route matched with "{action = \"GetAllLgaByStateId\", controller = \"State\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLgaByStateIdAsync(Int32)" on controller "Assessment.Controllers.StateController" ("Assessment").
+22:52:48 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:52:48 [INF] Executed DbCommand ("309"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__stateId_0"
+22:52:48 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+22:52:48 [INF] Executed DbCommand ("68"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__stateId_0"
+22:52:49 [INF] Executed action "Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)" in 1184.4379ms
+22:52:49 [INF] Executed endpoint '"Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)"'
+22:52:49 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllLgaByStateId?stateId=25 - - - 200 - application/json;+charset=utf-8 1373.5707ms
+22:54:36 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+22:54:36 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 41.2028ms
+22:54:36 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+22:54:36 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+22:54:36 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 0.1878ms
+22:54:36 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.6680ms
+22:54:36 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+22:54:36 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.6336ms
+22:54:46 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllLgaByStateId?stateId=25 - -
+22:54:46 [INF] Executing endpoint '"Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)"'
+22:54:46 [INF] Route matched with "{action = \"GetAllLgaByStateId\", controller = \"State\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLgaByStateIdAsync(Int32)" on controller "Assessment.Controllers.StateController" ("Assessment").
+22:54:46 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:54:46 [INF] Executed DbCommand ("2"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__stateId_0"
+22:54:46 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+22:54:47 [INF] Executed DbCommand ("3"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[lgaName], [l].[StateId], [s].[StateName]
+FROM [Lga] AS [l]
+INNER JOIN [State] AS [s] ON [l].[StateId] = [s].[Id]
+WHERE [l].[StateId] = @__stateId_0"
+22:54:47 [INF] Executed action "Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)" in 313.1884ms
+22:54:47 [INF] Executed endpoint '"Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)"'
+22:54:47 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllLgaByStateId?stateId=25 - - - 200 - application/json;+charset=utf-8 322.6931ms
+22:55:30 [INF] Now listening on: "http://localhost:5264"
+22:55:30 [INF] Application started. Press Ctrl+C to shut down.
+22:55:30 [INF] Hosting environment: "Development"
+22:55:30 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+22:55:32 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+22:55:33 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+22:55:33 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+22:55:33 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 20.6160ms
+22:55:33 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 1010.6644ms
+22:55:33 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 119.1007ms
+22:55:34 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+22:55:34 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 294.8820ms
+22:55:42 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllLgaByStateId?stateId=25 - -
+22:55:42 [INF] Executing endpoint '"Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)"'
+22:55:42 [INF] Route matched with "{action = \"GetAllLgaByStateId\", controller = \"State\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLgaByStateIdAsync(Int32)" on controller "Assessment.Controllers.StateController" ("Assessment").
+22:55:45 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:55:47 [INF] Executed DbCommand ("132"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__stateId_0"
+22:55:47 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+22:55:47 [INF] Executed DbCommand ("55"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [s].[StateName]
+FROM [Lga] AS [l]
+INNER JOIN [State] AS [s] ON [l].[StateId] = [s].[Id]
+WHERE [l].[StateId] = @__stateId_0"
+22:55:47 [INF] Executed action "Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)" in 5001.5598ms
+22:55:47 [INF] Executed endpoint '"Assessment.Controllers.StateController.GetAllLgaByStateIdAsync (Assessment)"'
+22:55:47 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/State/GetAllLgaByStateId?stateId=25 - - - 200 - application/json;+charset=utf-8 5093.2806ms
+22:56:14 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/State/GetStateById?stateId=25 - -
+22:56:14 [INF] Executing endpoint '"Assessment.Controllers.StateController.GetStateByIdAsync (Assessment)"'
+22:56:14 [INF] Route matched with "{action = \"GetStateById\", controller = \"State\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStateByIdAsync(Int32)" on controller "Assessment.Controllers.StateController" ("Assessment").
+22:56:14 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:56:14 [INF] Executed DbCommand ("2"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [State] AS [s]
+WHERE [s].[Id] = @__stateId_0"
+22:56:14 [INF] Executed DbCommand ("1"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[StateName]
+FROM [State] AS [s]
+WHERE [s].[Id] = @__stateId_0"
+22:56:15 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+22:56:15 [INF] Executed action "Assessment.Controllers.StateController.GetStateByIdAsync (Assessment)" in 297.3369ms
+22:56:15 [INF] Executed endpoint '"Assessment.Controllers.StateController.GetStateByIdAsync (Assessment)"'
+22:56:15 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/State/GetStateById?stateId=25 - - - 200 - application/json;+charset=utf-8 352.8300ms
+22:59:37 [INF] Now listening on: "http://localhost:5264"
+22:59:37 [INF] Application started. Press Ctrl+C to shut down.
+22:59:37 [INF] Hosting environment: "Development"
+22:59:37 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+22:59:39 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+22:59:40 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+22:59:40 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 872.3629ms
+22:59:40 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.2330ms
+22:59:40 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+22:59:40 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 97.9909ms
+22:59:40 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+22:59:40 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 246.2158ms
+22:59:49 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/State/GetLgaById?lgaId=737 - -
+22:59:49 [INF] Executing endpoint '"Assessment.Controllers.StateController.GetLgaByIdAsync (Assessment)"'
+22:59:49 [INF] Route matched with "{action = \"GetLgaById\", controller = \"State\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLgaByIdAsync(Int32)" on controller "Assessment.Controllers.StateController" ("Assessment").
+22:59:50 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+22:59:52 [INF] Executed DbCommand ("180"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+22:59:52 [INF] Executed DbCommand ("149"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[StateId], [l].[lgaName], [s].[StateName]
+FROM [Lga] AS [l]
+INNER JOIN [State] AS [s] ON [l].[StateId] = [s].[Id]
+WHERE [l].[Id] = @__lgaId_0"
+22:59:52 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+22:59:52 [INF] Executed action "Assessment.Controllers.StateController.GetLgaByIdAsync (Assessment)" in 3632.4141ms
+22:59:52 [INF] Executed endpoint '"Assessment.Controllers.StateController.GetLgaByIdAsync (Assessment)"'
+22:59:52 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/State/GetLgaById?lgaId=737 - - - 200 - application/json;+charset=utf-8 3755.5322ms
+23:00:06 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/State/GetLgaById?lgaId=8800 - -
+23:00:06 [INF] Executing endpoint '"Assessment.Controllers.StateController.GetLgaByIdAsync (Assessment)"'
+23:00:06 [INF] Route matched with "{action = \"GetLgaById\", controller = \"State\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLgaByIdAsync(Int32)" on controller "Assessment.Controllers.StateController" ("Assessment").
+23:00:06 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+23:00:06 [INF] Executed DbCommand ("7"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+23:00:06 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+23:00:06 [INF] Executed action "Assessment.Controllers.StateController.GetLgaByIdAsync (Assessment)" in 23.6999ms
+23:00:06 [INF] Executed endpoint '"Assessment.Controllers.StateController.GetLgaByIdAsync (Assessment)"'
+23:00:06 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/State/GetLgaById?lgaId=8800 - - - 200 - application/json;+charset=utf-8 28.3668ms
+23:00:19 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - -
+23:00:19 [INF] Executing endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+23:00:19 [INF] Route matched with "{action = \"GetBanks\", controller = \"Banks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBanksAsync()" on controller "Assessment.Controllers.BanksController" ("Assessment").
+23:00:21 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GetAllBanksResponse"'.
+23:00:21 [INF] Executed action "Assessment.Controllers.BanksController.GetBanksAsync (Assessment)" in 2616.1518ms
+23:00:21 [INF] Executed endpoint '"Assessment.Controllers.BanksController.GetBanksAsync (Assessment)"'
+23:00:21 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/v1/Banks/GetBanks - - - 200 - application/json;+charset=utf-8 2622.6660ms
+23:00:38 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 121
+23:00:38 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:00:38 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:00:39 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:00:39 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 1101.0034ms
+23:00:39 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:00:39 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 121 - 400 - application/problem+json;+charset=utf-8 1106.8616ms
+23:25:00 [INF] Now listening on: "http://localhost:5264"
+23:25:01 [INF] Application started. Press Ctrl+C to shut down.
+23:25:01 [INF] Hosting environment: "Development"
+23:25:01 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+23:25:02 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+23:25:03 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+23:25:03 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+23:25:03 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 11.2483ms
+23:25:03 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 1718.6974ms
+23:25:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 174.2408ms
+23:25:04 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+23:25:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 292.0181ms
+23:25:43 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 121
+23:25:43 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:25:43 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:25:45 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:25:45 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 1426.6599ms
+23:25:45 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:25:45 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 121 - 400 - application/problem+json;+charset=utf-8 1548.7568ms
+23:26:27 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 130
+23:26:27 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:26:27 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:26:27 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:26:27 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 11.8772ms
+23:26:27 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:26:27 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 130 - 400 - application/problem+json;+charset=utf-8 24.8981ms
+23:26:35 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 132
+23:26:35 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:26:35 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:26:35 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:26:35 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 22.7159ms
+23:26:35 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:26:35 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 132 - 400 - application/problem+json;+charset=utf-8 23.2183ms
+23:27:06 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 133
+23:27:06 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:27:06 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:27:06 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:27:06 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 1.8373ms
+23:27:06 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:27:06 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 133 - 400 - application/problem+json;+charset=utf-8 6.8920ms
+23:28:01 [INF] Now listening on: "http://localhost:5264"
+23:28:01 [INF] Application started. Press Ctrl+C to shut down.
+23:28:01 [INF] Hosting environment: "Development"
+23:28:01 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+23:28:03 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+23:28:04 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+23:28:04 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+23:28:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.4883ms
+23:28:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 936.2532ms
+23:28:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 270.2701ms
+23:28:04 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+23:28:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 306.1680ms
+23:29:40 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 128
+23:29:41 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:29:41 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:29:41 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:29:41 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 460.2207ms
+23:29:41 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:29:41 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 128 - 400 - application/problem+json;+charset=utf-8 583.1186ms
+23:30:03 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 137
+23:30:03 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:30:03 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:30:14 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+23:30:16 [INF] Executed DbCommand ("131"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__req_PhoneNumber_0"
+23:30:28 [INF] Executed DbCommand ("392"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+23:30:54 [INF] Executed DbCommand ("2"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+23:31:13 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+23:31:13 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 70032.1441ms
+23:31:13 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:31:13 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 137 - 200 - application/json;+charset=utf-8 70099.3088ms
+23:31:24 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135
+23:31:24 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:31:24 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:31:28 [INF] Entity Framework Core "6.0.6" initialized '"CustomerDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.6"' with options: "MigrationsAssembly=Assessment "
+23:31:28 [INF] Executed DbCommand ("2"ms) [Parameters=["@__req_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__req_PhoneNumber_0"
+23:31:36 [INF] Executed DbCommand ("1"ms) [Parameters=["@__req_StateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[StateId] = @__req_StateId_0"
+23:31:46 [INF] Executed DbCommand ("1"ms) [Parameters=["@__lgaId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[StateId], [l].[lgaName], [l].[localId]
+FROM [Lga] AS [l]
+WHERE [l].[Id] = @__lgaId_0"
+23:31:46 [INF] Executed DbCommand ("53"ms) [Parameters=["@__stateId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[StateName]
+FROM [State] AS [s]
+WHERE [s].[Id] = @__stateId_0"
+23:32:37 [INF] Executed DbCommand ("253"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Customers] ([DateCreated], [DateVerified], [EmailAddress], [LgaId], [PasswordHash], [PhoneNumber], [Salt], [StateId], [isVerified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Customers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+23:33:11 [INF] Executed DbCommand ("246"ms) [Parameters=["@__Trim_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[DateCreated], [c].[DateVerified], [c].[EmailAddress], [c].[LgaId], [c].[PasswordHash], [c].[PhoneNumber], [c].[Salt], [c].[StateId], [c].[isVerified]
+FROM [Customers] AS [c]
+WHERE [c].[PhoneNumber] = @__Trim_0"
+23:33:29 [INF] Executed DbCommand ("50"ms) [Parameters=["@__customer_PhoneNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[CustomerPhoneNo], [o].[DateGenerated], [o].[OTP]
+FROM [OtpGenerated] AS [o]
+WHERE [o].[CustomerPhoneNo] = @__customer_PhoneNumber_0"
+23:33:41 [INF] Executed DbCommand ("41"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [OtpGenerated] ([CustomerPhoneNo], [DateGenerated], [OTP])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [OtpGenerated]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+23:34:05 [INF] Executing "OkObjectResult", writing value of type '"Domain.Models.Response.GenericResponse"'.
+23:34:05 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 161075.8139ms
+23:34:05 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:34:05 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135 - 200 - application/json;+charset=utf-8 161082.3356ms
+23:51:48 [INF] Now listening on: "http://localhost:5264"
+23:51:48 [INF] Application started. Press Ctrl+C to shut down.
+23:51:48 [INF] Hosting environment: "Development"
+23:51:48 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+23:51:49 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+23:51:50 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+23:51:50 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+23:51:50 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 14.4065ms
+23:51:50 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 1064.1838ms
+23:51:51 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 216.1871ms
+23:51:51 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+23:51:51 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 320.3074ms
+23:52:15 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135
+23:52:15 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:52:16 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:52:16 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:52:16 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 482.1413ms
+23:52:16 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:52:16 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 135 - 400 - application/problem+json;+charset=utf-8 590.0406ms
+23:52:30 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 131
+23:52:30 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:52:30 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:53:35 [INF] Now listening on: "http://localhost:5264"
+23:53:35 [INF] Application started. Press Ctrl+C to shut down.
+23:53:35 [INF] Hosting environment: "Development"
+23:53:35 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+23:53:36 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+23:53:37 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+23:53:37 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+23:53:37 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 664.3977ms
+23:53:37 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 14.2324ms
+23:53:37 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 168.5457ms
+23:53:37 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+23:53:37 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 291.3189ms
+23:54:00 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 133
+23:54:00 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:54:01 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:54:01 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:54:01 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 432.78ms
+23:54:01 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:54:01 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 133 - 400 - application/problem+json;+charset=utf-8 686.1631ms
+23:57:08 [INF] Now listening on: "http://localhost:5264"
+23:57:08 [INF] Application started. Press Ctrl+C to shut down.
+23:57:08 [INF] Hosting environment: "Development"
+23:57:08 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+23:57:10 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+23:57:10 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 562.0617ms
+23:57:10 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+23:57:10 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+23:57:10 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 54.5430ms
+23:57:10 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 108.8057ms
+23:57:11 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+23:57:11 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.0750ms
+23:57:34 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 123
+23:57:34 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:57:34 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:57:34 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:57:34 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 536.4063ms
+23:57:34 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:57:34 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 123 - 400 - application/problem+json;+charset=utf-8 614.9415ms
+23:58:26 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 131
+23:58:26 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:58:26 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:59:02 [INF] Now listening on: "http://localhost:5264"
+23:59:02 [INF] Application started. Press Ctrl+C to shut down.
+23:59:02 [INF] Hosting environment: "Development"
+23:59:02 [INF] Content root path: "C:\Users\DELL\Desktop\netcore\Assessment\Assessment\"
+23:59:03 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - -
+23:59:04 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - -
+23:59:04 [INF] Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - -
+23:59:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 200 - text/html;charset=utf-8 769.5184ms
+23:59:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 26.6725ms
+23:59:04 [INF] Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 196.8803ms
+23:59:04 [INF] Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - -
+23:59:05 [INF] Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 200.4518ms
+23:59:12 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 121
+23:59:12 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:59:12 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:59:12 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:59:12 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 361.466ms
+23:59:12 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:59:12 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 121 - 400 - application/problem+json;+charset=utf-8 458.8272ms
+23:59:20 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 116
+23:59:20 [INF] Executing endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:59:20 [INF] Route matched with "{action = \"CreateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Domain.Models.Request.CreateCustomerReq)" on controller "Assessment.Controllers.CustomerController" ("Assessment").
+23:59:20 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+23:59:20 [INF] Executed action "Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)" in 11.256ms
+23:59:20 [INF] Executed endpoint '"Assessment.Controllers.CustomerController.CreateCustomerAsync (Assessment)"'
+23:59:20 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/v1/Customer/CreateCustomer application/json 116 - 400 - application/problem+json;+charset=utf-8 15.3473ms
